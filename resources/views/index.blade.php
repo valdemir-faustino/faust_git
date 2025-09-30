@@ -20,7 +20,15 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-           <h1>Testando PHP</h1>
+    <a href="{{ route('create')}}">Cadastro</a>
+    <body>
+        <div>
+             <h1>Testando PHP</h1>
+              @foreach($cads as $cad)
+               Id:{{$cad->id}}<br>
+               {{$cad->name}}<br>
+              @endforeach
+        </div>
+        
     </body>
 </html>

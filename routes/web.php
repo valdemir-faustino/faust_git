@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RotaController;
 
 Route::get('/', [RotaController::class, 'index'])->name('index');
 Route::get('/create', [RotaController::class, 'create'])->name('create');
